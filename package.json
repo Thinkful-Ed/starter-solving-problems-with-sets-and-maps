@@ -1,0 +1,26 @@
+{
+  "name": "starter-solving-problems-with-sets-and-maps",
+  "version": "1.0.0",
+  "description": "_Sample problems and solutions for solving problems with Sets and Maps_",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thinkful-Ed/starter-solving-problems-with-sets-and-maps.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thinkful-Ed/starter-solving-problems-with-sets-and-maps/issues"
+  },
+  "homepage": "https://github.com/Thinkful-Ed/starter-solving-problems-with-sets-and-maps#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
