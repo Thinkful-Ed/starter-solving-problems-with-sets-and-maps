@@ -26,6 +26,10 @@ npm test
 
 To view the solution to these problems, checkout the solution branch.
 
+## Problems
+
+1. [Intersection](src/intersection)
+
 ## License
 
 This project is [MIT Licensed](LICENSE)
