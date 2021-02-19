@@ -14,7 +14,7 @@ describe("Intersection", () => {
     expect(intersection([1, 2, 3], [4, 5, 6])).toEqual([]);
   });
   it("should return full array if both are the same", () => {
-    expect(intersection([1, 2, 3, 4, 5], [5, 4, 3, 2, 1])).toEqual([
+    expect(intersection([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]).sort()).toEqual([
       1,
       2,
       3,
@@ -23,15 +23,15 @@ describe("Intersection", () => {
     ]);
   });
   it("should eliminate duplicates from results", () => {
-    expect(intersection([1, 2, 2, 3, 4, 4, 5], [1, 2, 2, 3, 4, 5])).toEqual([
-      1,
-      2,
+    expect(
+      intersection([1, 2, 2, 3, 4, 4, 5], [1, 2, 2, 3, 4, 5]).sort()
+    ).toEqual([1, 2, 3, 4, 5]);
+  });
+  it("should only return common elements", () => {
+    expect(intersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]).sort()).toEqual([
       3,
       4,
       5,
     ]);
-  });
-  it("should only return common elements", () => {
-    expect(intersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7])).toEqual([3, 4, 5]);
   });
 });
