@@ -29,6 +29,8 @@ To view the solution to these problems, checkout the solution branch.
 ## Problems
 
 1. [Intersection](src/intersection)
+2. [Sum Pairs](src/sumPairs)
+3. [Same Letters](src/sameLetters)
 
 ## License
 
