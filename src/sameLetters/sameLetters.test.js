@@ -1,4 +1,4 @@
-const sameLetters = require("../src/sameLetters");
+const sameLetters = require("./index");
 
 describe("Same Letters", () => {
   it("should return an empty Map for empty array", () => {
