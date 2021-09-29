@@ -1,4 +1,4 @@
-const sumPairs = require("../src/sumPairs");
+const sumPairs = require("./index");
 
 describe("Sum Pairs", () => {
   it("should return [] for []", () => {

@@ -1,4 +1,4 @@
-const intersection = require("../src/intersection");
+const intersection = require("./index");
 
 describe("Intersection", () => {
   it("should return [] for empty arrays", () => {
@@ -15,11 +15,7 @@ describe("Intersection", () => {
   });
   it("should return full array if both are the same", () => {
     expect(intersection([1, 2, 3, 4, 5], [5, 4, 3, 2, 1]).sort()).toEqual([
-      1,
-      2,
-      3,
-      4,
-      5,
+      1, 2, 3, 4, 5,
     ]);
   });
   it("should eliminate duplicates from results", () => {
@@ -29,9 +25,7 @@ describe("Intersection", () => {
   });
   it("should only return common elements", () => {
     expect(intersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]).sort()).toEqual([
-      3,
-      4,
-      5,
+      3, 4, 5,
     ]);
   });
 });
